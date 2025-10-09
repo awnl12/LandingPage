@@ -18,6 +18,7 @@ html {
 }
 
 
+
 body {
 
     font: 1.6rem;
@@ -156,6 +157,14 @@ p {
 
 /* =================== MAIN ===========================*/
 
+main.box-shadow {
+
+  background-color: rgba(10,10,20, 0.8);
+  box-shadow: 0 0 20px rgba(186,82,232,0.8);
+  margin: 2rem auto;
+  padding: 2rem;
+}
+
 .sMain {
     background-color: #0e022dc9;
     border-radius: 1rem;
@@ -174,6 +183,8 @@ p {
     -webkit-box-shadow: 1px 0px 12px 7px rgba(186, 82, 232, 1);
     -moz-box-shadow: 1px 0px 12px 7px rgba(186, 82, 232, 1);
     gap: 1rem;
+    border-radius: 1rem;
+    padding: .5rem;
 
 }
 
@@ -274,45 +285,14 @@ p {
     margin-bottom: 2rem;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 footer p {
     text-align: center;
 }
+
+
+
+
+
+
+
+
