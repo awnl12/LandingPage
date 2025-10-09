@@ -235,30 +235,44 @@ p {
 }
 
 
-.infofly img{
-
-  display: block;
-  margin: 0 auto;
-  max-width: 100%;
-  height: auto;
-
-}
-
 
 
 .contH2fly{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 1rem;
-    margin: 5rem 10rem;
+    margin: 5rem 20rem;
 }
 
 
+.flyText h2{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #785b91;
+}
+
+.flyText p{
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.contH2fly img{
+    margin-left: 20rem;
+    box-shadow: 0 0 10px var(--color-secundario);
+}
 
 
+.flyText ul{
+    display: flex;
+    flex-direction: column;
+    color: var(--color-principal);
+    font-size: 1.5rem;
+}
 
-
-
+.flyText li {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
 
 
 
