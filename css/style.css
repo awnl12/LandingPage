@@ -235,8 +235,23 @@ p {
 }
 
 
+.infofly img{
+
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+
+}
 
 
+
+.contH2fly{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+    margin: 5rem 10rem;
+}
 
 
 
