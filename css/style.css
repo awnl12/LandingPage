@@ -150,6 +150,7 @@ p {
 
 
 }
+
 /* ================== HERO ======================*/
 
 
@@ -159,10 +160,10 @@ p {
 
 main.box-shadow {
 
-  background-color: rgba(10,10,20, 0.8);
-  box-shadow: 0 0 20px rgba(186,82,232,0.8);
-  margin: 2rem auto;
-  padding: 2rem;
+    background-color: rgba(10, 10, 20, 0.8);
+    box-shadow: 0 0 20px rgba(186, 82, 232, 0.8);
+    margin: 2rem auto;
+    padding: 2rem;
 }
 
 .sMain {
@@ -240,7 +241,7 @@ main.box-shadow {
 }
 
 
-.contenedorFly h2{
+.contenedorFly h2 {
     text-align: center;
     margin-bottom: 5rem;
 }
@@ -248,7 +249,7 @@ main.box-shadow {
 
 
 
-.contH2fly{
+.contH2fly {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 1rem;
@@ -256,24 +257,24 @@ main.box-shadow {
 }
 
 
-.flyText h2{
+.flyText h2 {
     font-size: 2rem;
     font-weight: bold;
     color: #785b91;
 }
 
-.flyText p{
+.flyText p {
     font-size: 1.6rem;
     font-weight: bold;
 }
 
-.contH2fly img{
-    margin-left: 20rem;
+.contH2fly img {
+    margin-left: 15rem;
     box-shadow: 0 0 10px var(--color-secundario);
 }
 
 
-.flyText ul{
+.flyText ul {
     display: flex;
     flex-direction: column;
     color: var(--color-principal);
@@ -293,6 +294,261 @@ footer p {
 
 
 
+/* Pegar al final de style.css — SOLO media queries (tablet + móvil) */
 
+/* Tablet / small desktop (landscape tablets, 1024px and below) */
+@media (max-width: 1024px) {
 
+    /* header */
+    .headerContenedor {
+        padding: 1.6rem 2rem;
+    }
+
+    .navegacionPrincipal nav {
+        gap: 2rem;
+    }
+
+    .navegacionPrincipal a {
+        font-size: 1.6rem;
+    }
+
+    /* hero */
+    .bgHero {
+        height: 40vw;
+        background-size: cover;
+    }
+
+    .hero {
+        padding: 10rem 2.5rem;
+        font-size: 1.95rem;
+    }
+
+    /* main grid -> 2 columnas (mantiene la estética de escritorio pero evita overflow) */
+    .contenedorMain {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 4rem;
+        column-gap: 2rem;
+        row-gap: 2rem;
+    }
+
+    .sMain {
+        height: auto;
+        padding: 1.6rem;
+    }
+
+    /* sección fly: reducir márgenes laterales y el tamaño de la imagen */
+    .contH2fly {
+        margin: 4rem 6rem;
+        column-gap: 1.2rem;
+    }
+
+    .contH2fly img {
+        margin-left: 6rem;
+        max-width: 420px;
+    }
+
+    /* textos */
+    .contenedorMain h2 {
+        font-size: 1.95rem;
+    }
+
+    .contenedorMain p {
+        font-size: 1.45rem;
+    }
+}
+
+/* Tablet portrait / large phones (768px and below) */
+@media (max-width: 768px) {
+    .headerContenedor {
+        padding: 1.2rem 1.6rem;
+        gap: .6rem;
+    }
+
+    .navegacionPrincipal nav {
+        gap: .8rem;
+        flex-wrap: wrap;
+    }
+
+    .navegacionPrincipal a {
+        font-size: 1.4rem;
+    }
+
+    .bgHero {
+        height: 55vw;
+        background-position: center;
+    }
+
+    .hero {
+        padding: 6.5rem 1.6rem;
+        font-size: 1.85rem;
+    }
+
+    .hero p {
+        font-size: 1.38rem;
+        line-height: 1.8;
+    }
+
+    .contenedorMain {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 2.5rem;
+        column-gap: 1.2rem;
+        row-gap: 1.2rem;
+        padding: .8rem;
+    }
+
+    .sMain {
+        height: auto;
+        padding: 1.4rem;
+    }
+
+    /* contH2fly -> apilar (imagen arriba, texto abajo) para evitar recortes */
+    .contH2fly {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 3rem 2rem;
+        row-gap: 1.6rem;
+    }
+
+    .contH2fly .img {
+        justify-self: center;
+    }
+
+    .contH2fly .img img {
+        width: 90%;
+        max-width: 520px;
+        margin: 0;
+    }
+
+    .flyText h2 {
+        font-size: 1.95rem;
+    }
+
+    .flyText p {
+        font-size: 1.45rem;
+    }
+
+    .flyText ul {
+        font-size: 1.3rem;
+    }
+}
+
+/* Mobile phones (480px and below) */
+@media (max-width: 480px) {
+
+    /* base scale */
+    html {
+        font-size: 56%;
+    }
+
+    /* header stacked (manteniendo logo + nav pero sin romper layout) */
+    .headerContenedor {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+        gap: .4rem;
+    }
+
+    .logoEquipo {
+        align-items: center;
+    }
+
+    .logoIcon {
+        width: 3rem;
+    }
+
+    .navegacionPrincipal nav {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: .4rem;
+        justify-content: space-between;
+    }
+
+    .navegacionPrincipal a {
+        font-size: 1.2rem;
+        margin-right: 0.4rem;
+        padding: .2rem .4rem;
+    }
+
+    .join-grad {
+        padding: .5rem .7rem;
+        font-size: 1.2rem;
+    }
+
+    /* hero más alto para no cortar texto y mantener apariencia */
+    .bgHero {
+        height: 70vw;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .hero {
+        padding: 4.5rem 1.2rem;
+        font-size: 1.6rem;
+    }
+
+    .hero h2 {
+        font-size: 1.9rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .hero a {
+        padding: .7rem 1rem;
+        font-size: 1.15rem;
+    }
+
+    /* main -> 1 columna */
+    .contenedorMain {
+        grid-template-columns: 1fr;
+        margin: 1.6rem;
+        gap: 1rem;
+        padding: .6rem;
+    }
+
+    .sMain {
+        height: auto;
+        padding: 1.2rem;
+        border-radius: .8rem;
+    }
+
+    /* contH2fly apilado: imagen arriba, texto abajo (mantiene orden visual) */
+    .contH2fly {
+        margin: 2rem 1rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 1rem;
+    }
+
+    .contH2fly .img img {
+        width: 95%;
+        box-shadow: 0 0 8px var(--color-secundario);
+        margin: 0 auto;
+    }
+
+    .flyText h2 {
+        font-size: 1.6rem;
+    }
+
+    .flyText p {
+        font-size: 1.15rem;
+    }
+
+    .flyText ul {
+        font-size: 1.05rem;
+    }
+
+    .navFly a {
+        padding: .6rem 1rem;
+        margin: .3rem;
+        font-size: 1.05rem;
+        white-space: normal;
+    }
+
+    footer p {
+        font-size: 1.2rem;
+    }
+}
 
