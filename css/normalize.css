@@ -1,6 +1,6 @@
 html {
-  line-height: 1.15; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
+  line-height: 1.15; 
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -21,9 +21,9 @@ h1 {
 
 
 hr {
-  box-sizing: content-box; /* 1 */
-  height: 0; /* 1 */
-  overflow: visible; /* 2 */
+  box-sizing: content-box; 
+  height: 0; 
+  overflow: visible; 
 }
 
 
