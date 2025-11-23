@@ -289,10 +289,6 @@ footer p {
 
 
 
-
-
-/* Pegar al final de style.css — SOLO media queries (tablet + móvil) */
-
 /* Tablet / small desktop (landscape tablets, 1024px and below) */
 @media (max-width: 1024px) {
 
@@ -548,4 +544,80 @@ footer p {
         font-size: 1.2rem;
     }
 }
+
+/* ====== MODAL / VENTANA FLOTANTE ====== */
+
+.modal {
+    position: fixed;
+    inset: 0; /* top, right, bottom, left: 0 */
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modal.oculto {
+    display: none;
+}
+
+.modal-contenido {
+    position: relative;
+    width: min(90%, 420px);
+    background: radial-gradient(circle at top, #3d1b63, #050010);
+    border-radius: 1.6rem;
+    padding: 2.4rem 2rem 2rem 2rem;
+    box-shadow: 0 0 20px rgba(186, 82, 232, 0.9);
+    text-align: center;
+}
+
+.modal-contenido h2 {
+    color: #f8cdda;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.modal-contenido p {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+.modal-cerrar {
+    position: absolute;
+    top: .8rem;
+    right: 1rem;
+    font-size: 2.4rem;
+    color: #fff;
+    cursor: pointer;
+    transition: transform .2s ease;
+}
+
+.modal-cerrar:hover {
+    transform: scale(1.1);
+}
+
+.modal-boton {
+    border: none;
+    padding: 1rem 1.8rem;
+    border-radius: .8rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    font-weight: bold;
+    background-image: linear-gradient(to right, #000000 0%, #5c037d 50%, #123b14 100%);
+    background-size: 200% auto;
+    color: #fff;
+    box-shadow: 0 0 12px rgba(186, 82, 232, 0.9);
+    transition: background-position .4s ease, transform .15s ease;
+}
+
+.modal-boton:hover {
+    background-position: right center;
+    transform: translateY(-1px);
+}
+
+
+
+
+
 

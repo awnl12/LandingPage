@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
 
-
     <link rel="preload" href="css/normalize.css" as="style">
     <link rel="stylesheet" href="css/normalize.css">
 
@@ -21,13 +20,10 @@
         <section class="bgHero">
 
             <div class="headerContenedor">
-
-
                 <div class="logoEquipo">
                     <img src="Iconos/logoIcon.svg" alt="LogotipoIcono">
                     <h1>Sambo</h1>
                 </div>
-
 
                 <div class="navegacionPrincipal">
                     <nav>
@@ -39,90 +35,64 @@
                             <a href="#">Join Now</a>
                         </div>
                     </nav>
-
                 </div>
-
             </div>
+
             <div class="hero">
                 <h2>Make your goals a reality</h2>
                 <p>Dream your goals and make them come true.</p>
-                <a href="#">open your mind</a>
-
+                <!-- ENLACE QUE ABRE EL MODAL -->
+                <a href="#" id="btnOpenModal">open your mind</a>
             </div>
 
         </section>
-
     </header>
 
-/*....*/
+
     <main class="box-shadow">
-
-
         <div class="contenedorMain">
 
-            <Section class="sMain">
-
+            <section class="sMain">
                 <img src="Iconos/logoIcon.svg" alt="icon">
                 <h2>MindSync: Connect your mind to the future</h2>
-                <p>Explore how syncing your mind with virtual environments can enhance your creativity, focus, and
-                    vision.
-                </p>
-            </Section>
+                <p>Explore how syncing your mind with virtual environments can enhance your creativity, focus, and vision.</p>
+            </section>
 
             <section class="sMain">
-
                 <img src="Iconos/logoIcon.svg" alt="icon">
                 <h2>Mental Lab: Design your reality</h2>
-                <p>Your mind is the lab. Here you can experiment, visualize, and build your ideal world.
-                </p>
-
+                <p>Your mind is the lab. Here you can experiment, visualize, and build your ideal world.</p>
             </section>
 
             <section class="sMain">
-
                 <img src="Iconos/logoIcon.svg" alt="icon">
                 <h2>NeuroVerse: Your mental universe</h2>
-                <p>Every thought creates a universe. Discover how your ideas can take shape in digital environments.”
-                </p>
-
+                <p>Every thought creates a universe. Discover how your ideas can take shape in digital environments.</p>
             </section>
 
             <section class="sMain">
-
                 <img src="Iconos/logoIcon.svg" alt="icon">
                 <h2>Cognitive Boost: Eleva tu potencia</h2>
-                <p>Activate your focus, creativity, and memory with tools designed to expand your mental capacity.
-                </p>
-
+                <p>Activate your focus, creativity, and memory with tools designed to expand your mental capacity.</p>
             </section>
 
             <section class="sMain">
-
                 <img src="Iconos/logoIcon.svg" alt="icon">
                 <h2>MindFlow: Your mental space in balance</h2>
-                <p>Design your digital environment to calm the mind, reduce noise, and enhance clarity.
-                </p>
-
+                <p>Design your digital environment to calm the mind, reduce noise, and enhance clarity.</p>
             </section>
 
             <section class="sMain">
                 <img src="Iconos/logoIcon.svg" alt="icon">
                 <h2>NeuroHack: Design Your Way of Thinking</h2>
-                <p>Break mental patterns and create new neural pathways to achieve what once seemed impossible.
-                </p>
-
+                <p>Break mental patterns and create new neural pathways to achieve what once seemed impossible.</p>
             </section>
+
         </div>
 
-
-
-
-
         <section>
-
             <div class="contenedorFly">
                 <h2>Fly through your mind</h2>
-
 
                 <div class="navFly">
                     <nav>
@@ -131,23 +101,16 @@
                         <a href="#">zero procrastination</a>
                     </nav>
                 </div>
-
             </div>
 
-
-
-
             <div class="contH2fly">
-
                 <div class="img">
                     <img src="Imagen/brainCyber.png" width="500px" height="350px">
                 </div>
 
                 <div class="flyText">
                     <h2>Make your mind and body one, surpass yourself.</h2>
-                    <p>When the mind and body move as one, boundaries dissolve. You stop reacting and start creating. In
-                        this space, focus becomes instinct, and instinct becomes power. Surpass your limits not by
-                        force, but by alignment. This is where evolution begins — not outside you, but within.</p>
+                    <p>When the mind and body move as one, boundaries dissolve. You stop reacting and start creating.</p>
 
                     <ul>
                         <li>Align your thoughts and actions to unlock true focus</li>
@@ -156,27 +119,31 @@
                     </ul>
                 </div>
             </div>
-
-
-
-
-
-
-
         </section>
 
-
-
-
-    </main>
-
-
-
-
+ <div id="modalMind" class="modal oculto">
+        <div class="modal-contenido">
+            <span id="btnCloseModal" class="modal-cerrar">&times;</span>
+            <h2>MindFocus Mode</h2>
+            <p id="mensajeModal">
+                ¿Listo para alinear mente y cuerpo y entrar en modo enfoque?
+            </p>
+            <button id="btnModo" class="modal-boton">
+                Activar modo enfoque
+            </button>
+        </div>
+    </div>
 
     <footer>
         <p>Landing Page: Freelancer Jorge Marroquin</p>
     </footer>
+
+   
+    <script src="/java/main.js"></script>
+
+
+
+
 </body>
 
 </html>
