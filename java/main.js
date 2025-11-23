@@ -28,9 +28,8 @@ document.addEventListener('DOMContentLoaded', function () {
     let modoEnfoqueActivo = false;
     let clicsEnHero = 0;
 
-    // Abrir modal al hacer clic en "open your mind"
     btnOpenModal.addEventListener('click', function (evento) {
-        evento.preventDefault(); // evita recargar la página
+        evento.preventDefault(); 
 
         clicsEnHero = clicsEnHero + 1;
 
